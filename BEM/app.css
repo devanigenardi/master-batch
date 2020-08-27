@@ -1,0 +1,154 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em; }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f0f1f5; }
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  color: #f0f1f5; }
+  .wrapper input[type="submit"], .wrapper button {
+    padding: 0 22px;
+    border-radius: 5px;
+    border: 1px solid #fc575e; }
+  .wrapper input[type="submit"]:hover, .wrapper button:hover {
+    cursor: pointer;
+    color: #fc575e;
+    background: white; }
+  .wrapper .container {
+    width: 80%;
+    margin: 0 auto; }
+    .wrapper .container .panel {
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0px 0px 3px #f0f1f5;
+      padding: 40px 20px 20px 20px;
+      margin: 10px; }
+      .wrapper .container .panel form input {
+        width: 100%;
+        margin: 8px 0;
+        height: 34px;
+        border-radius: 5px;
+        border: 1px solid #555;
+        padding: 5px 15px;
+        font-size: 14px;
+        color: #555; }
+      .wrapper .container .panel form #addCategories {
+        color: #fc575e; }
+      .wrapper .container .panel form .controls {
+        display: flex;
+        justify-content: space-between; }
+        .wrapper .container .panel form .controls input {
+          width: 49%; }
+    .wrapper .container .linksList div {
+      color: #555; }
+      .wrapper .container .linksList div a {
+        text-decoration: none; }
+    .wrapper .container .linksList .link {
+      position: relative; }
+      .wrapper .container .linksList .link .link-options {
+        position: absolute;
+        top: 5px;
+        right: 5px; }
+      .wrapper .container .linksList .link .link-date {
+        font-size: 14px;
+        font-style: italic; }
+      .wrapper .container .linksList .link .category {
+        font-weight: bold;
+        padding: 5px;
+        border: 1px solid #fc575e;
+        border-radius: 5px;
+        font-size: 10px;
+        background: #fc575e;
+        color: #f0f1f5; }
+  .wrapper nav {
+    height: 60px;
+    background: #333; }
+    .wrapper nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%; }
+    .wrapper nav a {
+      font-size: 24px;
+      color: #f0f1f5; }
+
+.hide {
+  display: none; }
+
+.header {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #555; }
+
+.btn-sm {
+  font-size: 10px;
+  padding: 5px 10px; }
+
+/*# sourceMappingURL=app.css.map */
