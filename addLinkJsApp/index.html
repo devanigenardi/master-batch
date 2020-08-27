@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <nav>
+            <div class="container" id="navContainer">
+                <h1 class="nav-header">link Saver</h1>
+                <a id="addBtn">+</a>
+            </div>
+        </nav>
+
+        <div class="container">
+
+            <div class="panel hide" id="addLinkPanel">
+                <h3 class="header">Add Link</h3>
+                <form action="" id="addLinkForm">
+
+                    <input type="text" name="title" type="text" class="form-control" id="linkTitle" placeholder="Title">
+                    <input type="text" name="url" type="text" class="form-control" id="linkUrl" placeholder="Url">
+                    <input type="text" name="category" type="text" class="form-control" id="linkCategory" placeholder="category">
+
+                    <div id="addCategories">
+                        
+                    </div>
+
+                    <div class="controls">
+                        <input type="submit" id="submitButton" value="Submit">
+                        <input type="submit" id="cancelButton" value="Cancel">
+                    </div>
+                    
+                </form>
+            </div>
+
+            <div id="linksList" class="linksList">
+
+                
+
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
