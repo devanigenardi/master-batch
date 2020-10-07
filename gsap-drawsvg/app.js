@@ -1,5 +1,5 @@
 const linkTitle = document.getElementById('linkTitle');
-const linkUrl = document.getElementById('linkUrl');
+const url = document.getElementById('url');
 const linkCategory = document.getElementById('linkCategory');
 const addCategories = document.getElementById('addCategories');
 const submitButton = document.getElementById('submitButton');
@@ -8,9 +8,7 @@ const addBtn = document.getElementById('addBtn');
 const addLinkPanel = document.getElementById('addLinkPanel');
 const linksList = document.getElementById('linksList');
 
-// add categories when we press eneter
 let linkCategories = [];
-// add new panel
 let newlinksObject = [];
 
 addBtn.addEventListener('click', () => {
@@ -23,12 +21,10 @@ cancelButton.addEventListener('click', event => {
     clearLinkForm();
 });
 
-// removes the class hide
 function showForm() {
     addLinkPanel.classList.remove('hide');
 }
 
-// add the class hide
 function hideForm() {
     addLinkPanel.classList.add('hide');
     clearLinkForm();
@@ -37,7 +33,7 @@ function hideForm() {
 linkCategory.addEventListener('keydown', function(event){
 
     if(event.keyCode === 13){
-        event.preventDefault();
+        event.preventDefault(); // clear the coma event
         linkCategories.push(linkCategory.value); // push the value to the array
         linkCategory.value = ''; // removes duplicated copy
 
@@ -47,12 +43,12 @@ linkCategory.addEventListener('keydown', function(event){
 });
 
 function displayLinksCategories() {
-    addCategories.innerHTML = '';
+    addCategories.innerHTML = "";
     for(let eyebrow of linkCategories){
-        //add each of the new categories we include
         var categoryHtmlString = `<span class="categorie">${eyebrow} </span>`;
         addCategories.innerHTML += categoryHtmlString;
     }
+
 }
 
 //clears content
@@ -90,14 +86,11 @@ submitButton.addEventListener('click', event => {
 });
 
 function displayLinks() {
-
     linksList.innerHTML = '';
 
     let index = 0;
 
     for(let link of newlinksObject){
-
-        //template that goes in linksList div
 
         let linkHtmlString = `
         
@@ -105,8 +98,9 @@ function displayLinks() {
                 <div class="link-options">
                     <button class="btn-sm" onClick="deleteLink(${index})">Delete</button>
                 </div>
-                <h2 class="header">${link.title}</h2>
-                <a href="${link.url}">${link.url}</a>
+                <a href="${link.url}">
+                    <h2 class="header">${link.title}</h2>
+                </a>
                 <p class="link-date">${Date.now()}</p>
                 <div class="category">
                     Categories:`;
@@ -124,11 +118,10 @@ function displayLinks() {
 
         linksList.innerHTML += linkHtmlString;
         index++;
+        console.log(index);
 
     }
 }
-
-//takes the position of the array and use the splice method 
 
 function deleteLink(index){
     newlinksObject.splice(index, 1);
