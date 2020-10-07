@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="card">
-                <img class="card__image" src="https://images.unsplash.com/photo-1468276311594-df7cb65d8df6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" />
-                <h3 class="card__title">Lorem Ipsun</h3>
-                <ul class="card__list">
-                    <li class="card__item">Item 1</li>
-                    <li class="card__item">Item 2</li>
-                    <li class="card__item">Item 3</li>
-                </ul>
-                <p class="card__text">There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...</p>
-                <a href="#!" class="card__cta">Clik here</a>
-            </div>
+    <div class="wrapper">
+        <div id="moving-path">
+            <div id="emoji">&#128512;</div>
+            <svg width="300" height="300" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 20.7 20.8" style="enable-background:new 0 0 20.7 20.8;" xml:space="preserve">
+            
+               
+                <circle class="path" cx="10.3" cy="10.4" r="10.2"/>
+            </svg>
+
+        </div>
+        <div id="morph">
+            <svg width="400" height="350" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 20.7 20.8" style="enable-background:new 0 0 20.7 20.8;" xml:space="preserve">
+                <polygon stroke="#006FCF" stroke-width="0.25" fill="none" class="poligon" points="9.5,0.3 20.4,0.3 20.4,20.5 10,20.5 0.2,20.5 0.2,0.3 "/>
+            </svg>
+        </div>
+        <div>
+            <svg id="text-svg" width="700" height="400">
+                <path class="text" stroke="red" stroke-width="1" fill="none" d="M107.392,252.5V198.167H156.55V252.5h25.087V128.245H156.55v48.9H107.392v-48.9H82.305V252.5h25.087Zm190.341,0V231.561H228.32V197.744H290.7V176.809H228.32V149.264h67.04V128.245H203.232V252.5h94.5Zm105.078,0V231.561H340.432v-102.3H315.345V252.5h87.466Zm101.688,0V231.561H442.12v-102.3H417.033V252.5H504.5Zm24.816-14.79q16.356,16.91,44.072,16.909,27.375,0,43.733-16.993t16.358-47.081q0-30.342-16.485-47.378t-43.945-17.036q-15.173,0-26.782,4.916a48.349,48.349,0,0,0-16.061,11.188,58.482,58.482,0,0,0-11.569,17.035q-5.679,12.885-5.679,31.868Q512.957,220.8,529.315,237.705Zm18.985-79.5q9.49-10.635,25-10.637t24.876,10.51q9.363,10.509,9.365,31.867,0,21.612-9.62,32.419T573.3,233.171q-15,0-24.748-10.891t-9.747-32Q538.807,168.844,548.3,158.206Z">
+            </svg>
         </div>
     </div>
-
-    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js" integrity="sha512-LfB+BcvR3zBt7ebVskhSWiSbEUiG3p5EcCprkieldsKhBeR6wpnLi0VpWC2GNgVGWP2n/skO8Bx2oKNjUhXCkw==" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

@@ -66,49 +66,30 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important; } }
 :root {
-  font-family: "Roboto", sans-serif;
   font-size: 16px; }
 
-img {
-  display: block;
-  height: auto; }
-
-.container {
+.wrapper {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background: #cecece;
+  overflow: hidden; }
 
-.card {
-  width: 100%;
-  max-width: 300px;
-  padding: 1rem;
-  background-color: #fff;
-  border: 1px solid #999; }
-  .card__image {
-    width: 100%; }
-  .card__title {
-    color: #333;
-    margin: 10px 0; }
-  .card__list {
-    display: flex; }
-  .card__item {
-    padding: 3px 7px;
-    background: #ccc;
-    color: #fff;
-    font-size: 0.7rem;
-    border-radius: 5px;
-    margin-right: 5px; }
-    .card__item:last-child {
-      margin-right: 0; }
-  .card__text {
-    margin: 10px 0;
-    justify-content: space-between; }
-  .card__cta {
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background: red;
-    color: #fff;
-    font-size: 0.7rem; }
+#moving-path {
+  position: relative;
+  height: 500px; }
+  #moving-path > * {
+    position: absolute;
+    top: 0px;
+    left: 0px; }
+  #moving-path #emoji {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    z-index: 1; }
+
+#text-svg path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0; }
 
 /*# sourceMappingURL=app.css.map */
