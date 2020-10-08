@@ -8,27 +8,29 @@
     margin: 0 auto;
     background:#cecece;
     overflow: hidden;
-}
+    padding: 20px 20px 0 20px;
+    .slab {
+        padding: 0 0 300px 0;
+        .box {
+            height: 100px;
+            width: 100px;
+        }
 
-#moving-path {
-    position: relative;
-    height: 500px;
-    & > * {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    }
-    #emoji {
-        position: absolute;
-        left: -10px;
-        top: -10px;
-        z-index: 1;
-    }
-}
+        .a {
+            background-color: red;
+            color: white;
+        }
+        .b {
+            background-color: orange;
+            color: white;
+        }
 
-#text-svg {
-    path {
-        stroke-dasharray:1000;
-        stroke-dashoffset: 0;
+        .c {
+            background-color: purple;
+            color: white;
+        }
+        &:first-child {
+            padding-top: 300px;
+        }
     }
 }

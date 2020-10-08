@@ -73,23 +73,23 @@ select {
   width: 100%;
   margin: 0 auto;
   background: #cecece;
-  overflow: hidden; }
-
-#moving-path {
-  position: relative;
-  height: 500px; }
-  #moving-path > * {
-    position: absolute;
-    top: 0px;
-    left: 0px; }
-  #moving-path #emoji {
-    position: absolute;
-    left: -10px;
-    top: -10px;
-    z-index: 1; }
-
-#text-svg path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 0; }
+  overflow: hidden;
+  padding: 20px 20px 0 20px; }
+  .wrapper .slab {
+    padding: 0 0 300px 0; }
+    .wrapper .slab .box {
+      height: 100px;
+      width: 100px; }
+    .wrapper .slab .a {
+      background-color: red;
+      color: white; }
+    .wrapper .slab .b {
+      background-color: orange;
+      color: white; }
+    .wrapper .slab .c {
+      background-color: purple;
+      color: white; }
+    .wrapper .slab:first-child {
+      padding-top: 300px; }
 
 /*# sourceMappingURL=app.css.map */
